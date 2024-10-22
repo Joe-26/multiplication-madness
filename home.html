@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicaiton Madness</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: "#da373d",
+              },
+            },
+          },
+        }
+    </script>
+    <script src="introjs.js"></script>
+
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center h-screen">
+    <div class="flex flex-col my-20 mx-56 bg-orange-200 h-96 border-2 border-orange-300 rounded-lg shadow-lg justify-center items-center">
+        <div class="m-10 py-4">
+            <h1 class="barriecito-regular text-5xl font-bold" id="barriecito-regular">Welcome to Multiplication Madness</h1>
+        </div>
+        <div class="flex flex-col p-4 justify-center" id="content">
+            <button type="submit" id="startButton" class="bg-green-400 p-2 shadow-lg rounded-lg px-5 text-green-700 border-2 border-green-700 font-medium">Hit SPACE to start</button>
+        </div>
+        
+    </div>
+</body>
+</html>

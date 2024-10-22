@@ -114,6 +114,13 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
+// Redirect to the home page when the escape key is pressed
+document.addEventListener('keydown', function(event) {
+    if (event.code === 'Escape') {
+        window.location.href = 'home.html';
+    }
+});
+
 // Request microphone access on page load
 window.onload = () => {
     requestMicPermission();
